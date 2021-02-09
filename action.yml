@@ -1,0 +1,14 @@
+name: 'Prace.go'
+description: 'Pull Request complete linter'
+author: 'Javier Bullrich'
+inputs:
+  configuration-path:
+    description: 'The path for the prace configuration file'
+    default: '.github/prace.yml'
+    required: true
+branding:
+  icon: 'edit'
+  color: 'orange'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
